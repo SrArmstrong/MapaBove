@@ -42,7 +42,7 @@ function VisitTracker() {
 
 function App() {
   return (
-    <Router basename="/Mapa">
+    <Router>
       {/* Componente para trackear visitas */}
       <VisitTracker />
       

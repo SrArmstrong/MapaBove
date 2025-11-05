@@ -4,7 +4,6 @@ import { VitePWA } from 'vite-plugin-pwa';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
-  base: '/Mapa/',
   plugins: [
     react(),
     basicSsl(),
