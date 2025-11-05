@@ -1,15 +1,16 @@
-# Build Stage
+# Etapa 1 - construimos la aplicación
 FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY package*.json ./
 RUN npm install
+
 COPY . .
-RUN npm run build   # <-- Aquí construimos la versión estática
+RUN npm run build
 
-# Serve Stage
-FROM nginx:stable-alpine
+# Etapa 2 - servidor nginx para producción
+FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
-
 EXPOSE 80
+
 CMD ["nginx", "-g", "daemon off;"]
