@@ -13,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: 'Mapa UTEQ',
         short_name: 'UTEQ',
-        start_url: '/',
+        start_url: '/Mapa/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#4caf50',
