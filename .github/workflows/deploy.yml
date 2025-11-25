@@ -73,8 +73,5 @@ jobs:
             echo "--- Login GHCR ---"
             echo "${{ secrets.REGISTRY_TOKEN }}" | docker login ghcr.io -u "${{ secrets.REGISTRY_USER }}" --password-stdin
 
-            echo "--- Actualizando contenedor GREEN ---"
-            bash scripts/deploy_green.sh
-
-            echo "Para activar green ejecuta manualmente:"
-            echo "bash scripts/switch_to_green.sh"
+            echo "--- Despliegue automático BLUE/GREEN ---"
+            bash scripts/deploy_auto.sh
