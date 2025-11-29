@@ -4,8 +4,8 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
-    message: "API running",
-    version: process.env.APP_VERSION || "unknown"
+    Mensaje: "API running",
+    ColorActual: process.env.ACTIVE_COLOR || "not-set"
   });
 });
 
