@@ -1,7 +1,7 @@
 {
   "name": "mapadocker",
   "version": "1.0.0",
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "Proyecto para presentar VPS, Docker, NGINX, Grafana/Prometheus.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon index.js",
