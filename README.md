@@ -1,4 +1,4 @@
-# 🚀 Instrucciones para clonar y levantar el proyecto
+# Instrucciones para clonar y levantar el proyecto
 
 ## 1 Clonar el repositorio
 ```bash
