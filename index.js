@@ -4,7 +4,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
-    Mensaje: "API running",
+    Mensaje: "API running111",
     ColorActual: process.env.ACTIVE_COLOR || "not-set"
   });
 });
