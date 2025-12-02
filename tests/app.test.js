@@ -6,7 +6,8 @@ describe("Pruebas API", () => {
   test("GET / debe devolver BLUE/GREEN", async () => {
     const res = await request(app).get("/");
     expect(res.status).toBe(200);
-    expect(res.body).toHaveProperty("version");
+    expect(res.body).toHaveProperty("ColorActual");
+    expect(["BLUE", "GREEN", "not-set"]).toContain(res.body.ColorActual);
   });
 
   test("GET /events debe regresar arreglo", async () => {
